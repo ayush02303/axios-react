@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { deletePost, getPost } from '../api/PostApi'
 import { useEffect} from 'react'
+import Form from './Form'
 
 
 const Posts = () => {
@@ -41,6 +42,9 @@ const Posts = () => {
 
   return (
     <>
+    <section>
+        <Form data = {data} setData = { setData}></Form>
+    </section>
     <section>
         <ul>
             {
