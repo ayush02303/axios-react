@@ -23,6 +23,7 @@ const Posts = () => {
                     return currELem.id != id
                  })
                   setData( newUpdatedPosts)
+                  console.log("hey")
               }
 
              
